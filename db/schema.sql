@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS food_trucks_db;
 CREATE DATABASE food_trucks_db;
 
 -- sample mysql code for testing locally
--- USE food_trucks_db
+-- USE food_trucks_db;
 
 -- CREATE TABLE food_trucks(
 --     id INT NOT NULL AUTO_INCREMENT,
