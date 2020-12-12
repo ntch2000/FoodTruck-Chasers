@@ -2,7 +2,7 @@
 {
     "development": {
       "username": "root",
-      "password": null,
+      "password": "Tych2020",
       "database": "food_trucks_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
