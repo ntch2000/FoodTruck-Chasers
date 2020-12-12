@@ -1,13 +1,49 @@
 module.exports = function (sequelize, DataTypes) {
   const Game = sequelize.define("food_truck", {
-    truck_name: DataTypes.STRING,
-    operator_firstName: DataTypes.STRING,
-    operator_LastName: DataTypes.STRING,
+    truck_name: {
+      type: DataTypes.STRING,
+      validate: {
+        isAlpha: true,
+        notNull: true,
+      },
+    },
+    operator_firstName: {
+      type: DataTypes.STRING,
+      validate: {
+        isAlpha: true,
+        notNull: true,
+      },
+    },
+    operator_LastName: {
+      type: DataTypes.STRING,
+      validate: {
+        isAlpha: true,
+        notNull: true,
+      },
+    },
     // maybe change the datatype for phone number
-    phone: DataTypes.INTEGER,
-    city: DataTypes.STRING,
-    category: DataTypes.STRING,
-    promo_message: DataTypes.STRING,
+    phone: {
+      type: DataTypes.STRING,
+      validate: {
+        is: /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/i,
+        notNull: true,
+      },
+    },
+    city: {
+      type: DataTypes.STRING,
+      validate: {
+        isAlpha: true,
+        notNull: true,
+      },
+    },
+    category: {
+      type: DataTypes.STRING,
+      validate: {
+        isAlpha: true,
+        notNull: true,
+      },
+    },
+    promo_message: DataTypes.TEXT,
   });
 
   return food_truck;
