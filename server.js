@@ -8,6 +8,9 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
+// adding require for the truck controllers
+const truckControllers = require("./controllers/truckContoller")
+
 // MIDDLEWARE
 // Handle POST body
 
