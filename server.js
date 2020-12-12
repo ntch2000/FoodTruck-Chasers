@@ -3,7 +3,7 @@ const exphbs = require("express-handlebars");
 
 const handlebars = require("handlebars");
 
-//const db = require("./models");
+const db = require("./models");
 const app = express();
 
 const PORT = process.env.PORT || 8080;
@@ -39,10 +39,9 @@ app.post("/api/test", (req, res) => {
   console.log(req.body);
 });
 
-
 // db.sequelize.sync({ force: true }).then(() => {
-//db.sequelize.sync().then(() => {
-app.listen(PORT, () => {
-  console.log(`App is running on http://localhost:${PORT}`);
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`App is running on http://localhost:${PORT}`);
+  });
 });
-//});
