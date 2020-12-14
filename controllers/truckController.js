@@ -20,6 +20,21 @@ router.get("/cityselector/:city", (req, res) => {
 });
 
 // route to edit a truck
+<<<<<<< HEAD
+=======
+router.put("/api/editTruck/:id", (req, res) => {
+    db.food_truck.update(req.body, {
+        where: {
+            id:req.params.id,
+        },
+    }).then((updatedTruck)=> {
+        res.json(updatedTruck);
+    }).catch((err) => {
+        console.log(err);
+    });
+});
+
+>>>>>>> 5cb2e2350e24b4a056075d0dcdc925f276fe0baf
 
 // route to delete a truck
 router.delete("/api/operator/:id", (req, res) => {
