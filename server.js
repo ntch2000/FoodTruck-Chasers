@@ -1,6 +1,10 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
+
 const handlebars = require("handlebars");
+const {
+  allowInsecurePrototypeAccess,
+} = require("@handlebars/allow-prototype-access");
 const db = require("./models");
 const app = express();
 
@@ -9,25 +13,24 @@ const truckControllers = require("./controllers/truckController");
 
 const PORT = process.env.PORT || 8080;
 
-
-
 // MIDDLEWARE
 // Handle POST body
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 // static directory to be served
 app.use(express.static("public"));
 
-// configure express-handlebars
+// Configure express-handlebars
 app.engine(
   "handlebars",
   exphbs({
     defaultLayout: "main",
+    handlebars: allowInsecurePrototypeAccess(handlebars),
   })
 );
+
 app.set("view engine", "handlebars");
 
 app.use(truckControllers);
