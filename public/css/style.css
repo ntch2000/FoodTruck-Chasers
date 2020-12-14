@@ -1,27 +1,111 @@
 body {
   /* background-image: url("./assets/foodtruckchasersjpeg.jpg"); */
-  background-color: darkgray;
+  background-color: #D3D3D3;
 }
+
 ul{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
   list-style-type:none
 }
-.red {
-  color: white;
-  background-color: red;
+p{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
 }
+
+a {
+  font-size: 28px;
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  color:#ffff;
+  text-shadow: 3px 1px 0px#ff914d;
+}
+
+h2{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
+
+label{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  font-size: 32px;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
+
+select{
+  color: #ff914d;
+}
+
+.red {
+  color: #DCBF9C;
+  background-color:#5CE1E6;
+  border-style: solid;
+  border-color: #ff914d;
+}
+
+.top-bar{
+  border-style: solid;
+  border-color: #d3d3d3;
+  background-color: #d3d3d3;
+}
+
+.menu{
+background-color: #d3d3d3! important;
+}
+
+.menu-text{
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;;
+}
+
 .box {
+  color:#ff914d;
   padding-top: 20px;
-  background-color: white;
-  border-color: black;
+  background-color:#5CE1E6;
+  border-color: #ff914d;
   border-style: solid;
   border-width: thin;
-  
 }
 .blue {
-  background-color: blue;
+  background-color:#5CE1E6;
 }
 .im {
-  background-image: url("./assets/food-truck-chasers-logo-1500\ \(1\).png");
+  background-image: url("./assets/food-truck-chasers-logo-500\ \(1\).png");
+  background-size: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.image{
+  max-height: 75px;
+  width: auto;
+  margin: 0px;
+}
+
+.image:hover {
+  transform: scale(1.3);
+  }
+
+.button-primary {
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  Font-size: 14px;
+  font-weight: bold;
+  color:#ffffff;
+  background-color:#ff914d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px! important;
+}
+.button:hover {
+  background-color: #db7231; /* Green */
+  color: white;
+}
+.im {
+  padding-top: 20px;
+  background-color: white;
+  border-color: #ff914d;
+  border-style: solid;
+  border-width: thin;
+  background-image: url("./assets/menu-chasers.jpg");
   background-size: 100%;
   position: relative;
 }
