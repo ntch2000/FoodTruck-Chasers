@@ -2,11 +2,8 @@
 {
     "development": {
       "username": "root",
-<<<<<<< HEAD
       "password": "1234",
-=======
-      "password": "Tych2020",
->>>>>>> 9a40d659d4b4e07ba3f58909c2e4a4a0d7c3ba59
+      >>>>>>> 9a40d659d4b4e07ba3f58909c2e4a4a0d7c3ba5
       "database": "food_trucks_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
