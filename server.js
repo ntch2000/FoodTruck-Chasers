@@ -37,6 +37,22 @@ app.use(truckControllers);
 // ROUTES
 
 // add routes here
+// View Route
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/operator", (req, res) => {
+  res.render("operator");
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.get("/citySelector", (req, res) => {
+  res.render("citySelector");
+});
 
 // API Routes
 app.get("/api/config", (req, res) => {
