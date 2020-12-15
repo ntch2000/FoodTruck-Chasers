@@ -103,7 +103,7 @@ background-color: #d3d3d3! important;
   position: relative;
 }
 li{
-  color: #ffff;
+  list-style-type:none
 }
 
 /* Footer Styling*/
