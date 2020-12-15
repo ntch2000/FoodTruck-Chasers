@@ -28,7 +28,7 @@ $(document).ready(function () {
         promo_message,
       },
     }).then((response) => {
-      window.location.replace("/operator");
+      window.location.replace(`/operator/${operator_username}`);
     });
   });
 });

@@ -19,10 +19,15 @@ router.get("/cityselector/:city", (req, res) => {
     });
 });
 
-router.get("/operator", (req, res) => {
+router.get("/operator/:operator_username", (req, res) => {
   db.food_truck
-    .findAll()
+    .findAll({
+      where: {
+        operator_username: req.params.operator_username,
+      },
+    })
     .then((cityTrucks) => {
+      console.log("trucks here");
       console.log(cityTrucks);
       res.render("operator", { food_trucks: cityTrucks });
     })
