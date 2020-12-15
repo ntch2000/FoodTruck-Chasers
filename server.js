@@ -60,9 +60,9 @@ app.get("/citySelector", (req, res) => {
 //   res.render("editTruck");
 // });
 
-// app.get("/createTruck", (req, res) => {
-//   res.render("createTruck");
-// });
+app.get("/createTruck", (req, res) => {
+  res.render("createTruck");
+});
 
 // API Routes
 app.get("/api/config", (req, res) => {
