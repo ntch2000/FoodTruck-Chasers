@@ -1,5 +1,4 @@
 body {
-  /* background-image: url("./assets/foodtruckchasersjpeg.jpg"); */
   background-color: #D3D3D3;
 }
 
@@ -68,12 +67,6 @@ background-color: #d3d3d3! important;
 .blue {
   background-color:#5CE1E6;
 }
-.im {
-  background-image: url("./assets/food-truck-chasers-logo-500\ \(1\).png");
-  background-size: 100%;
-  position: relative;
-  margin: auto;
-}
 
 .image{
   max-height: 75px;
@@ -105,7 +98,7 @@ background-color: #d3d3d3! important;
   border-color: #ff914d;
   border-style: solid;
   border-width: thin;
-  background-image: url("./assets/menu-chasers.jpg");
+  background-image: url("../assets/menu-chasers.jpg");
   background-size: 100%;
   position: relative;
 }
