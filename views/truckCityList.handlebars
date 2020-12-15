@@ -1,77 +1,37 @@
 <body>
-  <!-- Start Top Bar -->
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li><a href="index.html" target="_blank"><img class="image" src="assets\food-truck-chasers-logo-1500 (1).png"
-              alt="food truck chasers logo"></a></li>
-        <li><a href="citySelector.html" target="_blank">City Selector</a></li>
-        <!-- <li><a href="#">Two</a></li>
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="index.html" target="_blank"><img class="image"
+                            src="assets\food-truck-chasers-logo-1500 (1).png" alt="food truck chasers logo"></a></li>
+                <li><a href="citySelector.html" target="_blank">City Selector</a></li>
+                <!-- <li><a href="#">Two</a></li>
           <li><a href="#">Three</a></li> -->
-      </ul>
+            </ul>
+        </div>
     </div>
-  </div>
-  <!-- End Top Bar -->
-  <div class="callout medium red">
-    <div class="row column text-center">
-      <h2>Here are the FOOD TRUCKS in your city</h2>
+    <!-- End Top Bar -->
+    <div class="callout medium red">
+        <div class="row column text-center">
+            <h2>Here are the FOOD TRUCKS in your city</h2>
+        </div>
     </div>
-  </div>
 
-  <div class="row small-10 medium-8 columns im">
-    <div>
-      <ul>
-        <li>food truck name</li>
-        <li>Location</li>
-        <li>today's special!</li>
-        <li>food category</li>
-      </ul>
+    <div class="row small-10 medium-8 columns im">
+        {{#each food_trucks}}
+        <div>
+            <ul>
+                <li>Food Truck Name: {{truck_name}}</li>
+                <li>Location: {{city}}</li>
+                <li>Today's Special!: {{promo_message}}</li>
+                <li>Food Category: {{category}}</li>
+            </ul>
+        </div>
+        {{/each}}
     </div>
-    <div>
-      <ul>
-        <li>food truck name</li>
-        <li>Location</li>
-        <li>today's special!</li>
-        <li>food category</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li>food truck name</li>
-        <li>Location</li>
-        <li>today's special!</li>
-        <li>food category</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-  <!-- End Top Bar -->
-  <div class="callout medium red">
-    <div class="row column text-center">
-      <h2>Here are the trucks in your city.</h2>
-    </div>
-  </div>
 
-  <div class="row small-10 medium-8 columns box">
-    {{#each food_trucks}}
-    <ul>
-      <li>Food Truck: <b>{{truck_name}}</b></li>
-      <li>Location: <b>{{city}}</b></li>
-      <li>Today's Special!: <b>{{promo_message}}</b></li>
-      <li>Food Category: <b>{{category}}</b></li>
-    </ul>
-    {{/each}}
-    <button type="button" class="button alert">edit</button>
-    <button type="button" class="button alert">delete</button>
-  </div>
 
-  <script src="" async defer></script>
+
+    <script src="" async defer></script>
 </body>
-
-<<<<<<< HEAD </html>
-  =======
-
-
-  <script src="" async defer></script>
-  </body>
-  >>>>>>> 0dff5c1f8f2ebc5c2d57a3c3cbeea0e9d7b038b4
