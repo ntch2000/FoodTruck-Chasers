@@ -37,6 +37,32 @@ app.use(truckControllers);
 // ROUTES
 
 // add routes here
+// View Route
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/operator", (req, res) => {
+  res.render("operator");
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.get("/citySelector", (req, res) => {
+  res.render("citySelector");
+});
+
+// VIEW ROUTES FOR TESTING ONLY -- MUST BE DELETED
+
+// app.get("/editTruck", (req, res) => {
+//   res.render("editTruck");
+// });
+
+// app.get("/createTruck", (req, res) => {
+//   res.render("createTruck");
+// });
 
 // API Routes
 app.get("/api/config", (req, res) => {

@@ -19,6 +19,18 @@ router.get("/cityselector/:city", (req, res) => {
     });
 });
 
+router.get("/operator", (req, res) => {
+  db.food_truck
+    .findAll()
+    .then((cityTrucks) => {
+      console.log(cityTrucks);
+      res.render("operator", { food_trucks: cityTrucks });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 // route to edit a truck
 router.put("/api/editTruck/:id", (req, res) => {
   db.food_truck

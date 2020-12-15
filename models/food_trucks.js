@@ -4,19 +4,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        isAlpha: true,
         notNull: true,
       },
     },
-    operator_firstName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isAlpha: true,
-        notNull: true,
-      },
-    },
-    operator_LastName: {
+    operator_username: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
