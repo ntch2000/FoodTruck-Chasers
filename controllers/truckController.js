@@ -1,4 +1,4 @@
-const { response } = require("express");
+
 const express = require("express");
 const router = express.Router();
 const db = require("../models");
@@ -7,7 +7,7 @@ const db = require("../models");
 router.get("/cityselector/:city", (req, res) => {
     db.food_truck.findAll({
         where: {
-            location: req.params.city
+            city: req.params.city
         }
     }).then((cityTrucks) => {
         console.log(cityTrucks);
@@ -18,7 +18,17 @@ router.get("/cityselector/:city", (req, res) => {
 });
 
 // route to edit a truck
-
+router.put("/api/editTruck/:id", (req, res) => {
+    db.food_truck.update(req.body, {
+        where: {
+            id:req.params.id,
+        },
+    }).then((updatedTruck)=> {
+        res.json(updatedTruck);
+    }).catch((err) => {
+        console.log(err);
+    });
+});
 
 
 // route to delete a truck
@@ -37,11 +47,13 @@ router.delete("/api/operator/:id", (req, res) => {
 
 
 // route to create a truck
-router.post.apply("/api/createTruck", (req, res) => {
+router.post("/api/createTruck", (req, res) => {
     db.food_truck.create(req.body)
     .then((newTruck)=> {
-        req.json(newTruck);
+        res.json(newTruck);
     }).catch((err) => {
         console.log(err);
     });
 });
+
+module.exports = router;
