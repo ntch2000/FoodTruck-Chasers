@@ -1,47 +1,40 @@
 <body>
-    <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li><a href="index.html"target="_blank"><img class="image" src="assets\food-truck-chasers-logo-1500 (1).png" alt="food truck chasers logo"></a></li>
-          <li><a href="operatorSelector.html"target="_blank">Operator Selector</a></li>
-          <!-- <li><a href="#">Two</a></li>
+  <!-- Start Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li><a href="/" target="_blank"><img class="image" src="assets\food-truck-chasers-logo-1500 (1).png"
+              alt="food truck chasers logo"></a></li>
+        <li><a href="/login" target="_blank">Operator Selector</a></li>
+        <!-- <li><a href="#">Two</a></li>
           <li><a href="#">Three</a></li> -->
-        </ul>
-      </div>
+      </ul>
     </div>
-    <!-- End Top Bar -->
-    <div class="callout medium red">
-      <div class="row column text-center">
-        <h2>Welcome to your page.</h2>
-      </div>
+  </div>
+  <!-- End Top Bar -->
+  <div class="callout medium red">
+    <div class="row column text-center">
+      <h2>Welcome to your page.</h2>
     </div>
+  </div>
 
-    <div class="row small-10 medium-8 columns im">
-      <p>Create a new truck</p>
-      <a href="createTruck.html" target="_blank" class="button button-primary">create</a>
-      <p>You can also edit or delete an existing truck.</p>
-      <div>
-        <ul>
-          <li>food truck name</li>
-          <li>Location</li>
-          <li>today's special!</li>
-          <li>food category</li>
-        </ul>
-        <a href="editTruck.html" target="_blank" class="button button-primary">edit</a>
-        <button type="button" class="button button-primary">delete</button>
-      </div>
-      <div>
-        <ul>
-          <li>food truck name</li>
-          <li>Location</li>
-          <li>today's special!</li>
-          <li>food category</li>
-        </ul>
-        <a href="editTruck.html" target="_blank" class="button button-primary">edit</a>
-        <button type="button" class="button button-primary">delete</button>
-      </div>
+  <div class="row small-10 medium-8 columns im">
+    <p>Create a new truck</p>
+    <a href="createTruck.html" target="_blank" class="button button-primary">create</a>
+    <p>You can also edit or delete an existing truck.</p>
+    {{#each food_trucks}}
+    <div>
+      <ul>
+        <li>Food Truck Name: {{truck_name}}</li>
+        <li>Location: {{city}}</li>
+        <li>Today's Special!: {{promo_message}}</li>
+        <li>Food Category: {{category}}</li>
+      </ul>
+      <a href="editTruck.html" target="_blank" class="button button-primary">edit</a>
+      <button type="button" class="button button-primary">delete</button>
     </div>
+    {{/each}}
+  </div>
 
-    <script src="" async defer></script>
-  </body>
+  <script src="" async defer></script>
+</body>
