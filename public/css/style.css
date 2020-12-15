@@ -109,3 +109,128 @@ background-color: #d3d3d3! important;
   background-size: 100%;
   position: relative;
 }
+li{
+  color: #ffff;
+}
+
+/* Footer Styling*/
+.ecommerce-footer {
+  background-color:#d3d3d3 ;
+  padding: 70px 20px 40px 20px;
+}
+
+.ecommerce-footer-links h5 {
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ecommerce-footer-links .menu > li > a {
+  line-height: 1.5em;
+  padding: 0.5rem 0rem;
+}
+
+.ecommerce-footer-links a {
+  color:#ff914d;
+  text-shadow: 3px 1px 0px #ffff;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.ecommerce-footer-links a:hover {
+  color: #1585CF;
+  transition: all 0.5s ease;
+}
+
+.ecommerce-footer-links .more-categories {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-links .more-categories {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .ecommerce-footer-links .ecommerce-footer-links-block {
+    margin-bottom: 3rem;
+  }
+}
+
+.ecommerce-footer-bottom-bar {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+.ecommerce-footer-bottom-bar .menu > li > a {
+  line-height: 1.2em;
+  padding: 10px 0;
+}
+
+.ecommerce-footer-bottom-bar a {
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+  font-size: 0.9rem;
+  transition: all 0.5s ease;
+}
+
+.ecommerce-footer-bottom-bar a:hover {
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar ul {
+    text-align: center;
+  }
+}
+
+.ecommerce-footer-bottom-bar li {
+  display: inline;
+}
+
+.ecommerce-footer-bottom-bar .bottom-links {
+  margin-top: 0.65rem;
+  margin-left: 0;
+}
+
+.ecommerce-footer-bottom-bar .bottom-links {
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar .bottom-links li {
+    text-align: center;
+  }
+}
+
+.ecommerce-footer-bottom-bar .ecommerce-footer-logomark li {
+  text-align: center;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar .ecommerce-footer-logomark {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.ecommerce-footer-bottom-bar .bottom-copyright {
+  color: #1585CF;
+  opacity: 0.4;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar .bottom-copyright {
+    text-align: center;
+  }
+}
