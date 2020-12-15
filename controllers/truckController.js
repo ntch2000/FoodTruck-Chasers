@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require("../models");
 
 // route to view all trucks in a city
-router.get("/cityselector/:city", (req, res) => {
+router.get("/truckCityList/:city", (req, res) => {
   db.food_truck
     .findAll({
       where: {
