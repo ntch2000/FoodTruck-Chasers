@@ -33,6 +33,12 @@ label{
 select{
   color: #ff914d;
 }
+span{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  font-size: 24px;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
 
 .red {
   color: #DCBF9C;
