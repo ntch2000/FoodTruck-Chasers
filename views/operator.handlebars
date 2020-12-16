@@ -3,7 +3,7 @@
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
-        <li><a href="/"><img class="image" src="assets\food-truck-chasers-logo-1500 (1).png"
+        <li><a href="/"><img class="image" src="..\assets\food-truck-chasers-logo-1500 (1).png"
               alt="food truck chasers logo"></a></li>
         <li><a href="/login">Operator Selector</a></li>
         <!-- <li><a href="#">Two</a></li>
@@ -14,7 +14,7 @@
   <!-- End Top Bar -->
   <div class="callout medium red">
     <div class="row column text-center">
-      <h2>Welcome to your page.</h2>
+      <h2>Welcome {{food_trucks.0.operator_username}} to your page.</h2>
     </div>
   </div>
 
@@ -36,5 +36,13 @@
     {{/each}}
   </div>
 
-  <script src="" async defer></script>
+  <script type="text/javascript" async defer>
+    $(document).ready(function (e) {
+      console.log("test operator");
+
+
+      console.log(username);
+    });
+
+  </script>
 </body>
