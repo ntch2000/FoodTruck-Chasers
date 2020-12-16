@@ -1,5 +1,5 @@
 body {
-  background-color: #D3D3D3;
+  background-color: #A9A9A9;
 }
 
 ul{
@@ -43,12 +43,12 @@ select{
 
 .top-bar{
   border-style: solid;
-  border-color: #d3d3d3;
-  background-color: #d3d3d3;
+  border-color: #A9A9A9;
+  background-color: #A9A9A9;
 }
 
 .menu{
-background-color: #d3d3d3! important;
+background-color: #A9A9A9! important;
 }
 
 .menu-text{
@@ -108,13 +108,13 @@ li{
 
 /* Footer Styling*/
 .ecommerce-footer {
-  background-color:#d3d3d3 ;
+  background-color:#A9A9A9 ;
   padding: 70px 20px 40px 20px;
 }
 
 .ecommerce-footer-links h5 {
   color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;
+  text-shadow: 2px 1px 0px #ff914d;
   font-size: 18px;
   font-weight: 600;
 }
@@ -126,7 +126,7 @@ li{
 
 .ecommerce-footer-links a {
   color:#ff914d;
-  text-shadow: 3px 1px 0px #ffff;
+  text-shadow: 2px 1px 0px #ffff;
   font-size: 1rem;
   transition: all 0.5s ease;
 }
