@@ -1,7 +1,6 @@
 body {
 
   background-color: #a9a9a9;
-
 }
 
 ul {
@@ -14,7 +13,6 @@ p {
 
 a {
   font-size: 28px;
-
   font-family: "M PLUS Rounded 1c", sans-serif !important;
   color: #ffff;
   text-shadow: 3px 1px 1px#ff914d;
@@ -39,7 +37,18 @@ label {
 select {
   color: #ff914d;
 }
-
+span{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  font-size: 24px;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
+#editLabel {
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  font-size: 24px;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
 .red {
   color: #dcbf9c;
   background-color: #5ce1e6;
