@@ -1,17 +1,22 @@
 body {
+<<<<<<< HEAD
   background-color: #A9A9A9;
+=======
+  background-color: #d3d3d3;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
 }
 
-ul{
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
-  list-style-type:none
+ul {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  list-style-type: none;
 }
-p{
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
+p {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
 }
 
 a {
   font-size: 28px;
+<<<<<<< HEAD
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   color:#ffff;
   text-shadow: 3px 1px 1px#ff914d;
@@ -21,27 +26,43 @@ h2{
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   color:#ffff;
   text-shadow: 3px 1px 1px #ff914d;
+=======
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  color: #ffff;
+  text-shadow: 3px 1px 0px#ff914d;
 }
 
-label{
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
+h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  color: #ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
+}
+
+label {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
   font-size: 32px;
+<<<<<<< HEAD
   color:#ffff;
   text-shadow: 3px 1px 1px #ff914d;
+=======
+  color: #ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
 }
 
-select{
+select {
   color: #ff914d;
 }
 
 .red {
-  color: #DCBF9C;
-  background-color:#5CE1E6;
+  color: #dcbf9c;
+  background-color: #5ce1e6;
   border-style: solid;
   border-color: #ff914d;
 }
 
-.top-bar{
+.top-bar {
   border-style: solid;
   border-color: #A9A9A9;
   background-color: #A9A9A9;
@@ -57,18 +78,18 @@ background-color: #A9A9A9! important;
 }
 
 .box {
-  color:#ff914d;
+  color: #ff914d;
   padding-top: 20px;
-  background-color:#5CE1E6;
+  background-color: #5ce1e6;
   border-color: #ff914d;
   border-style: solid;
   border-width: thin;
 }
 .blue {
-  background-color:#5CE1E6;
+  background-color: #5ce1e6;
 }
 
-.image{
+.image {
   max-height: 75px;
   width: auto;
   margin: 0px;
@@ -76,17 +97,17 @@ background-color: #A9A9A9! important;
 
 .image:hover {
   transform: scale(1.3);
-  }
+}
 
 .button-primary {
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
-  Font-size: 14px;
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-size: 14px;
   font-weight: bold;
-  color:#ffffff;
-  background-color:#ff914d;
+  color: #ffffff;
+  background-color: #ff914d;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 15px! important;
+  margin-bottom: 15px !important;
 }
 .button:hover {
   background-color: #db7231; /* Green */
@@ -102,20 +123,30 @@ background-color: #A9A9A9! important;
   background-size: 100%;
   position: relative;
 }
-li{
-  list-style-type:none
+li {
+  list-style-type: none;
 }
 
 /* Footer Styling*/
 .ecommerce-footer {
+<<<<<<< HEAD
   background-color:#A9A9A9 ;
+=======
+  background-color: #d3d3d3;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
   padding: 70px 20px 40px 20px;
 }
 
 .ecommerce-footer-links h5 {
+<<<<<<< HEAD
   color:#ffff;
   text-shadow: 3px 1px 1px #ff914d;
   font-size: 24px;
+=======
+  color: #ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+  font-size: 18px;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
   font-weight: 600;
 }
 
@@ -125,15 +156,21 @@ li{
 }
 
 .ecommerce-footer-links a {
+<<<<<<< HEAD
   color: black;
   /* text-shadow: .1px 1px 1px black; */
   font-size: 1.30rem;
   font-family:'M PLUS Rounded 1c', sans-serif! important; 
+=======
+  color: #ff914d;
+  text-shadow: 3px 1px 0px #ffff;
+  font-size: 1rem;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
   transition: all 0.5s ease;
 }
 
 .ecommerce-footer-links a:hover {
-  color: #1585CF;
+  color: #1585cf;
   transition: all 0.5s ease;
 }
 
@@ -166,16 +203,27 @@ li{
 }
 
 .ecommerce-footer-bottom-bar a {
+<<<<<<< HEAD
   color: black;
   /* text-shadow: 1px 1px 1px black; */
   font-size: 1.25rem;
+=======
+  color: #ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+  font-size: 0.9rem;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
   transition: all 0.5s ease;
 }
 
 .ecommerce-footer-bottom-bar a:hover {
+<<<<<<< HEAD
   color: black;
   /* text-shadow: 1px 1px 1px black; */
   font-size: 1.25rem;
+=======
+  color: #ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+>>>>>>> 5246d2d2d2ca8ea6d7a4bc5d0097f1a631eece04
   transition: all 0.5s ease;
 }
 
@@ -216,7 +264,7 @@ li{
 }
 
 .ecommerce-footer-bottom-bar .bottom-copyright {
-  color: #1585CF;
+  color: #1585cf;
   opacity: 0.4;
   font-size: 0.9rem;
   line-height: 1.2em;
