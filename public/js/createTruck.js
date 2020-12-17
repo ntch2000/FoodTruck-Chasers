@@ -3,7 +3,10 @@ $(document).ready(function () {
 
   // value is obtained from local storage and set as the username to be saved into the database
   const operator_username = localStorage.getItem("username");
-  console.log(operator_username);
+  //console.log(operator_username);
+
+  // sets url for the returning to the operator page based on the username
+  $("#operator_page").attr("href", `/operator/${operator_username}`);
 
   $("#new-truck").on("submit", function (e) {
     e.preventDefault();
