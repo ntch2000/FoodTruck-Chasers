@@ -49,6 +49,11 @@ span{
   color:#ffff;
   text-shadow: 3px 1px 0px #ff914d;
 }
+.divide{
+border-bottom: solid;
+border-color: #ff914d;
+margin-bottom: 20px;
+}
 .red {
   color: #dcbf9c;
   background-color: #5ce1e6;
