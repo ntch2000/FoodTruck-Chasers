@@ -28,7 +28,7 @@ router.get("/operator/:operator_username", (req, res) => {
     })
     .then((cityTrucks) => {
       console.log("trucks here");
-      //console.log(cityTrucks[0].operator_username);
+      console.log(cityTrucks);
       res.render("operator", { food_trucks: cityTrucks });
     })
     .catch((err) => {
@@ -38,7 +38,7 @@ router.get("/operator/:operator_username", (req, res) => {
 
 // route to edit a truck
 router.put("/api/editTruck/:id", (req, res) => {
-  console.log("OVER",req.body, "PARAMS", req.params )
+  console.log("OVER", req.body, "PARAMS", req.params);
   db.food_truck
     .update(req.body, {
       where: {
@@ -56,16 +56,16 @@ router.put("/api/editTruck/:id", (req, res) => {
 
 //route to display edit page with data
 router.get("/editTruck/:id", (req, res) => {
-  db.food_truck.findAll({
-    where: {
-      id: req.params.id,
-    }
-  }).then(truck => {
-    console.log("TRUCK", truck)
-    res.render("editTruck", {truck})
-  })
-
- 
+  db.food_truck
+    .findAll({
+      where: {
+        id: req.params.id,
+      },
+    })
+    .then((truck) => {
+      console.log("TRUCK", truck);
+      res.render("editTruck", { truck });
+    });
 });
 
 // route to delete a truck
