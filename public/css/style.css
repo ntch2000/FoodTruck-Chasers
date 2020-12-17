@@ -1,5 +1,5 @@
 body {
-  background-color: #D3D3D3;
+  background-color: #a9a9a9;
 }
 
 ul{
@@ -34,6 +34,12 @@ select{
   color: #ff914d;
 }
 span{
+  font-family:'M PLUS Rounded 1c', sans-serif! important;
+  font-size: 24px;
+  color:#ffff;
+  text-shadow: 3px 1px 0px #ff914d;
+}
+#editLabel {
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   font-size: 24px;
   color:#ffff;

@@ -3,7 +3,7 @@
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
-        <li><a href="/"><img class="image" src="assets\food-truck-chasers-logo-1500 (1).png"
+        <li><a href="/"><img class="image" src="..\assets\food-truck-chasers-logo-1500 (1).png"
               alt="food truck chasers logo"></a></li>
         <li><a href="/login">Operator Selector</a></li>
         <li><a href="/operator">Operator</a></li>
@@ -18,7 +18,7 @@
     </div>
   </div>
 
-
+{{#each truck}}
   <div class="row small-10 medium-8 columns im">
     <form id="editTruck">
       <label id="editLabel">Truck Name:</label>
@@ -37,5 +37,7 @@
     </form>
   </div>
 
-  <script src="" async defer></script>
+{{/each}}
+
+  <script src="../js/editTruck.js" async defer></script>
 </body>

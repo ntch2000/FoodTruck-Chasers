@@ -46,6 +46,11 @@ app.get("/operator", (req, res) => {
   res.render("operator");
 });
 
+//app.get("/editTruck/:id", (req, res) => {
+ // console.log("YOOOOO", req.body)
+  //res.render("editTruck")
+//});
+
 app.get("/login", (req, res) => {
   res.render("login");
 });
