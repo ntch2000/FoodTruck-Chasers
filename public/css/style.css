@@ -14,20 +14,20 @@ a {
   font-size: 28px;
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   color:#ffff;
-  text-shadow: 3px 1px 0px#ff914d;
+  text-shadow: 3px 1px 1px#ff914d;
 }
 
 h2{
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;
+  text-shadow: 3px 1px 1px #ff914d;
 }
 
 label{
   font-family:'M PLUS Rounded 1c', sans-serif! important;
   font-size: 32px;
   color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;
+  text-shadow: 3px 1px 1px #ff914d;
 }
 
 select{
@@ -53,7 +53,7 @@ background-color: #A9A9A9! important;
 
 .menu-text{
   color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;;
+  text-shadow: 3px 1px 1px #ff914d;;
 }
 
 .box {
@@ -114,8 +114,8 @@ li{
 
 .ecommerce-footer-links h5 {
   color:#ffff;
-  text-shadow: 2px 1px 0px #ff914d;
-  font-size: 18px;
+  text-shadow: 3px 1px 1px #ff914d;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -125,9 +125,10 @@ li{
 }
 
 .ecommerce-footer-links a {
-  color:#ff914d;
-  text-shadow: 2px 1px 0px #ffff;
-  font-size: 1rem;
+  color: black;
+  /* text-shadow: .1px 1px 1px black; */
+  font-size: 1.30rem;
+  font-family:'M PLUS Rounded 1c', sans-serif! important; 
   transition: all 0.5s ease;
 }
 
@@ -165,15 +166,16 @@ li{
 }
 
 .ecommerce-footer-bottom-bar a {
-  color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;
-  font-size: 0.9rem;
+  color: black;
+  /* text-shadow: 1px 1px 1px black; */
+  font-size: 1.25rem;
   transition: all 0.5s ease;
 }
 
 .ecommerce-footer-bottom-bar a:hover {
-  color:#ffff;
-  text-shadow: 3px 1px 0px #ff914d;
+  color: black;
+  /* text-shadow: 1px 1px 1px black; */
+  font-size: 1.25rem;
   transition: all 0.5s ease;
 }
 
