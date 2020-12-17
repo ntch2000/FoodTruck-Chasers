@@ -6,4 +6,16 @@ $(document).ready(function (e) {
 
   // save username to local storage to be used when a new truck is created
   localStorage.setItem("username", operator_username);
+
+  $(document).ready(function () {
+    $(".delete-truck").on("click", function () {
+      const id = $(this).data("id");
+      $.ajax({
+        method: "DELETE",
+        url: `/api/operator/${id}`,
+      }).then((response) => {
+        window.location.reload();
+      });
+    });
+  });
 });
