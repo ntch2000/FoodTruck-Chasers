@@ -6,6 +6,7 @@ $(document).ready(function (e) {
     const operator_username = $("#username :selected").text();
     console.log(operator_username);
 
+    localStorage.setItem("username", operator_username);
     $.ajax({
       method: "GET",
       url: `/operator/${operator_username}`,

@@ -42,9 +42,9 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/operator/", (req, res) => {
-  res.render("operator");
-});
+// app.get("/operator/", (req, res) => {
+//   res.render("operator");
+// });
 
 //app.get("/editTruck/:id", (req, res) => {
 // console.log("YOOOOO", req.body)
