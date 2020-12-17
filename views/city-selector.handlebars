@@ -15,20 +15,22 @@
       <h2>Where do you want your chase to start?</h2>
     </div>
   </div>
- <form id="citySelector">
+  <form id="citySelector">
     <div class="row small-10 medium-8 columns box" id="city">
-      <label
-        >Select City
+      <label>Select City
         <select id="input">
-          <option value="atlanta">Atlanta</option>
+          {{#each food_trucks}}
+          <option value="{{city}}">{{city}}</option>
+          {{/each}}
+          {{!-- <option value="atlanta">Atlanta</option>
           <option value="athens">Athens</option>
           <option value="sandySprings">Sandy Springs</option>
-          <option value="fivePoints">Five Points</option>
+          <option value="fivePoints">Five Points</option> --}}
         </select>
         <button type="button" class="expanded button button-primary" id="submit">Chase</button>
       </label>
     </div>
-    </form>
+  </form>
   <img src="assets\food-truck-chasers-logo-1500 (1).png"
     alt="Food Truck Chaser Logo of a Truck being chased by a crowd">
 

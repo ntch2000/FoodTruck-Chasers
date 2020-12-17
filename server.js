@@ -55,9 +55,9 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-app.get("/citySelector", (req, res) => {
-  res.render("city-selector");
-});
+// app.get("/citySelector", (req, res) => {
+//   res.render("city-selector");
+// });
 
 // VIEW ROUTES FOR TESTING ONLY -- MUST BE DELETED
 

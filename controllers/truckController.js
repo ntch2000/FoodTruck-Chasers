@@ -2,6 +2,22 @@ const express = require("express");
 const router = express.Router();
 const db = require("../models");
 
+// route to city-select page
+
+router.get("/citySelector", (req, res) => {
+  db.food_truck
+    .findAll({
+      attributes: [sequelize.fn("DISTINCT", sequelize.col("city"))],
+    })
+    .then((cities) => {
+      console.log(cities);
+      res.render("city-selector", { food_trucks: cities });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 // route to view all trucks in a city
 router.get("/truckCityList/:city", (req, res) => {
   db.food_truck
