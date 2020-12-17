@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/operator", (req, res) => {
+app.get("/operator/", (req, res) => {
   res.render("operator");
 });
 

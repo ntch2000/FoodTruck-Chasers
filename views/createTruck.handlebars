@@ -20,7 +20,7 @@
 
 
   <div class="row small-10 medium-8 columns im">
-    <form id="editTruck">
+    {{!-- <form id="editTruck">
       <label id="editLabel">Truck Name:</label>
       <input type="text" value="{{truck_name}}" aria-describedby="exampleHelpText" id="truckName">
       <label id="editLabel">Phone Number:</label>
@@ -32,7 +32,18 @@
       <label id="editLabel">Promotional Message:</label>
       <input type="text" label="Promotional Message" placeholder="{{promo_message}}" value="{{promo_message}}" aria-describedby="exampleHelpText" id="promo">
       <input type="hidden" value="{{id}}" id="truckId">
-      <input type="hidden" value="{{operator_username}}" id="operator_username">
+      <input type="hidden" value="{{operator_username}}" id="operator_username"> --}}
+    <form id="new-truck">
+      <label id="editLabel">Truck Name:</label>
+      <input type="text" aria-describedby="exampleHelpText" id="truck_name">
+      <label id="editLabel">Phone Number:</label>
+      <input type="text" aria-describedby="exampleHelpText" id="phone">
+      <label id="editLabel">City:</label>
+      <input type="text" aria-describedby="exampleHelpText" id="city">
+      <label id="editLabel">Category:</label>
+      <input type="text" aria-describedby="exampleHelpText" id="category">
+      <label id="editLabel">Promotional Message:</label>
+      <input type="text" aria-describedby="exampleHelpText" id="promo_message">
       <button type="submit" class="expanded button button-primary">Chase</button>
     </form>
   </div>

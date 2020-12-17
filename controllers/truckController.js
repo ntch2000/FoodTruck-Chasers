@@ -28,7 +28,7 @@ router.get("/operator/:operator_username", (req, res) => {
     })
     .then((cityTrucks) => {
       console.log("trucks here");
-      console.log(cityTrucks);
+      //console.log(cityTrucks[0].operator_username);
       res.render("operator", { food_trucks: cityTrucks });
     })
     .catch((err) => {

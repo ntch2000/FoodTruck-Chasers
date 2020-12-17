@@ -6,6 +6,7 @@
         <li><a href="/"><img class="image" src="..\assets\food-truck-chasers-logo-1500 (1).png"
               alt="food truck chasers logo"></a></li>
         <li><a href="/login">Operator Selector</a></li>
+
         <!-- <li><a href="#">Two</a></li>
           <li><a href="#">Three</a></li> -->
       </ul>
@@ -14,7 +15,8 @@
   <!-- End Top Bar -->
   <div class="callout medium red">
     <div class="row column text-center">
-      <h2>Welcome to your page.</h2>
+      <h2>Welcome {{food_trucks.0.operator_username}} to your page.</h2>
+      <input type="hidden" value="{{food_trucks.0.operator_username}}" id="operator_username">
     </div>
   </div>
 
@@ -36,5 +38,8 @@
     {{/each}}
   </div>
 
-  <script src="" async defer></script>
+  <script type="text/javascript" src="../js/operator.js">
+
+
+  </script>
 </body>
