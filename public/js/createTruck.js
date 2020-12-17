@@ -1,10 +1,14 @@
 $(document).ready(function () {
-  console.log("This is a test");
+  //console.log("This is a test");
+
+  // value is obtained from local storage and set as the username to be saved into the database
+  const operator_username = localStorage.getItem("username");
+  //console.log(operator_username);
 
   $("#new-truck").on("submit", function (e) {
     e.preventDefault();
     const truck_name = $("#truck_name").val();
-    const operator_username = $("#username").val();
+
     const phone = $("#phone").val();
     const city = $("#city").val();
     const category = $("#category").val();
