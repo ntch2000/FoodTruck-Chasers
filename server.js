@@ -42,13 +42,13 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/operator/", (req, res) => {
-  res.render("operator");
-});
+// app.get("/operator/", (req, res) => {
+//   res.render("operator");
+// });
 
 //app.get("/editTruck/:id", (req, res) => {
- // console.log("YOOOOO", req.body)
-  //res.render("editTruck")
+// console.log("YOOOOO", req.body)
+//res.render("editTruck")
 //});
 
 app.get("/login", (req, res) => {
@@ -56,7 +56,7 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/citySelector", (req, res) => {
-  res.render("citySelector");
+  res.render("city-selector");
 });
 
 // VIEW ROUTES FOR TESTING ONLY -- MUST BE DELETED

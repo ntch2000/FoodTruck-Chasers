@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // value is obtained from local storage and set as the username to be saved into the database
   const operator_username = localStorage.getItem("username");
-  //console.log(operator_username);
+  console.log(operator_username);
 
   $("#new-truck").on("submit", function (e) {
     e.preventDefault();
