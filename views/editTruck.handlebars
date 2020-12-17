@@ -6,7 +6,7 @@
         <li><a href="/"><img class="image" src="..\assets\food-truck-chasers-logo-1500 (1).png"
               alt="food truck chasers logo"></a></li>
         <li><a href="/login">Operator Selector</a></li>
-        <li><a href="/operator">Operator</a></li>
+        <li><a href="" id="operator_page">Operator</a></li>
         <!-- <li><a href="#">Three</a></li> -->
       </ul>
     </div>
@@ -18,7 +18,7 @@
     </div>
   </div>
 
-{{#each truck}}
+  {{#each truck}}
   <div class="row small-10 medium-8 columns im">
     <form id="editTruck">
       <label id="editLabel">Truck Name:</label>
@@ -26,18 +26,21 @@
       <label id="editLabel">Phone Number:</label>
       <input type="text" label="Phone Number" value="{{phone}}" aria-describedby="exampleHelpText" id="phoneNumber">
       <label id="editLabel">City:</label>
-      <input type="text" label="City" placeholder="{{city}}" value="{{city}}" aria-describedby="exampleHelpText" id="city">
+      <input type="text" label="City" placeholder="{{city}}" value="{{city}}" aria-describedby="exampleHelpText"
+        id="city">
       <label id="editLabel">Category:</label>
-      <input type="text" label="Food Category" placeholder="{{category}}" value="{{category}}" aria-describedby="exampleHelpText" id="fcategory">
+      <input type="text" label="Food Category" placeholder="{{category}}" value="{{category}}"
+        aria-describedby="exampleHelpText" id="category">
       <label id="editLabel">Promotional Message:</label>
-      <input type="text" label="Promotional Message" placeholder="{{promo_message}}" value="{{promo_message}}" aria-describedby="exampleHelpText" id="promo">
+      <input type="text" label="Promotional Message" placeholder="{{promo_message}}" value="{{promo_message}}"
+        aria-describedby="exampleHelpText" id="promo">
       <input type="hidden" value="{{id}}" id="truckId">
       <input type="hidden" value="{{operator_username}}" id="operator_username">
       <button type="submit" class="expanded button button-primary">Chase</button>
     </form>
   </div>
 
-{{/each}}
+  {{/each}}
 
   <script src="../js/editTruck.js" async defer></script>
 </body>
