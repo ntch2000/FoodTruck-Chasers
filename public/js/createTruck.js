@@ -5,6 +5,9 @@ $(document).ready(function () {
   const operator_username = localStorage.getItem("username");
   //console.log(operator_username);
 
+  // sets url for the returning to the operator page based on the username
+  $("#operator_page").attr("href", `/operator/${operator_username}`);
+
   $("#new-truck").on("submit", function (e) {
     e.preventDefault();
     const truck_name = $("#truck_name").val();
