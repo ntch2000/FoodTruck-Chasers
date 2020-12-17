@@ -1,6 +1,10 @@
 $(document).ready(function () {
   console.log("this is a test");
 
+  const operator = localStorage.getItem("username");
+
+  $("#operator_page").attr("href", `/operator/${operator}`);
+
   $("#editTruck").on("submit", function (event) {
     event.preventDefault();
     const truck_name = $("#truckName").val();
@@ -22,8 +26,8 @@ $(document).ready(function () {
         category,
         promo_message,
       },
-    }).then(response => {
-        window.location.replace(`/operator/${operator_username}`);
-    })
+    }).then((response) => {
+      window.location.replace(`/operator/${operator_username}`);
+    });
   });
 });
