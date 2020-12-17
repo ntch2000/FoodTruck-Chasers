@@ -1,10 +1,6 @@
 body {
 
   background-color: #a9a9a9;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
 }
 
 ul {
@@ -17,10 +13,6 @@ p {
 
 a {
   font-size: 28px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   font-family: "M PLUS Rounded 1c", sans-serif !important;
   color: #ffff;
   text-shadow: 3px 1px 1px#ff914d;
@@ -29,26 +21,17 @@ a {
 h2 {
   font-family: "M PLUS Rounded 1c", sans-serif !important;
   color: #ffff;
-<<<<<<< HEAD
-  text-shadow: 3px 1px 0px #ff914d;
-=======
 
   text-shadow: 3px 1px 1px #ff914d;
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
 }
 
 label {
   font-family: "M PLUS Rounded 1c", sans-serif !important;
   font-size: 32px;
-<<<<<<< HEAD
-  color: #ffff;
-  text-shadow: 3px 1px 0px #ff914d;
-=======
 
   color: #ffff;
 
   text-shadow: 3px 1px 1px #ff914d;
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
 }
 
 select {
@@ -140,28 +123,18 @@ li {
 
 /* Footer Styling*/
 .ecommerce-footer {
-<<<<<<< HEAD
-  background-color: #d3d3d3;
-=======
 
   background-color: #a9a9a9;
 
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   padding: 70px 20px 40px 20px;
 }
 
 .ecommerce-footer-links h5 {
-<<<<<<< HEAD
-  color: #ffff;
-  text-shadow: 3px 1px 0px #ff914d;
-  font-size: 18px;
-=======
 
   color: #ffff;
 
   text-shadow: 3px 1px 1px #ff914d;
   font-size: 24px;
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   font-weight: 600;
 }
 
@@ -171,18 +144,12 @@ li {
 }
 
 .ecommerce-footer-links a {
-<<<<<<< HEAD
-  color: #ff914d;
-  text-shadow: 3px 1px 0px #ffff;
-  font-size: 1rem;
-=======
   color: black;
   /* text-shadow: .1px 1px 1px black; */
 
   font-size: 1.3rem;
   font-family: "M PLUS Rounded 1c", sans-serif !important;
 
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   transition: all 0.5s ease;
 }
 
@@ -220,27 +187,16 @@ li {
 }
 
 .ecommerce-footer-bottom-bar a {
-<<<<<<< HEAD
-  color: #ffff;
-  text-shadow: 3px 1px 0px #ff914d;
-  font-size: 0.9rem;
-=======
   color: black;
   /* text-shadow: 1px 1px 1px black; */
   font-size: 1.25rem;
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   transition: all 0.5s ease;
 }
 
 .ecommerce-footer-bottom-bar a:hover {
-<<<<<<< HEAD
-  color: #ffff;
-  text-shadow: 3px 1px 0px #ff914d;
-=======
   color: black;
   /* text-shadow: 1px 1px 1px black; */
   font-size: 1.25rem;
->>>>>>> 9ec4a2797b5e84e072b799c008c7443cf91e8003
   transition: all 0.5s ease;
 }
 
