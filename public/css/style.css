@@ -1,5 +1,7 @@
 body {
-  background-color: #A9A9A9;
+
+  background-color: #a9a9a9;
+
 }
 
 ul {
@@ -12,21 +14,25 @@ p {
 
 a {
   font-size: 28px;
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
-  color:#ffff;
+
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  color: #ffff;
   text-shadow: 3px 1px 1px#ff914d;
 }
 
-h2{
-  font-family:'M PLUS Rounded 1c', sans-serif! important;
-  color:#ffff;
+h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  color: #ffff;
+
   text-shadow: 3px 1px 1px #ff914d;
 }
 
 label {
   font-family: "M PLUS Rounded 1c", sans-serif !important;
   font-size: 32px;
-  color:#ffff;
+
+  color: #ffff;
+
   text-shadow: 3px 1px 1px #ff914d;
 }
 
@@ -43,17 +49,17 @@ select {
 
 .top-bar {
   border-style: solid;
-  border-color: #A9A9A9;
-  background-color: #A9A9A9;
+  border-color: #a9a9a9;
+  background-color: #a9a9a9;
 }
 
-.menu{
-background-color: #A9A9A9! important;
+.menu {
+  background-color: #a9a9a9 !important;
 }
 
-.menu-text{
-  color:#ffff;
-  text-shadow: 3px 1px 1px #ff914d;;
+.menu-text {
+  color: #ffff;
+  text-shadow: 3px 1px 1px #ff914d;
 }
 
 .box {
@@ -108,12 +114,16 @@ li {
 
 /* Footer Styling*/
 .ecommerce-footer {
-  background-color:#A9A9A9 ;
+
+  background-color: #a9a9a9;
+
   padding: 70px 20px 40px 20px;
 }
 
 .ecommerce-footer-links h5 {
-  color:#ffff;
+
+  color: #ffff;
+
   text-shadow: 3px 1px 1px #ff914d;
   font-size: 24px;
   font-weight: 600;
@@ -127,8 +137,10 @@ li {
 .ecommerce-footer-links a {
   color: black;
   /* text-shadow: .1px 1px 1px black; */
-  font-size: 1.30rem;
-  font-family:'M PLUS Rounded 1c', sans-serif! important; 
+
+  font-size: 1.3rem;
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+
   transition: all 0.5s ease;
 }
 
