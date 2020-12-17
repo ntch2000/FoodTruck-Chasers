@@ -21,17 +21,16 @@
   </div>
 
   <div class="row small-10 medium-8 columns im">
-    <p>Create a new truck</p>
+    <p><span> Create a new truck</span></p>
     <a href="/createTruck" class="button button-primary">Create</a>
-    <p>You can also edit or delete an existing truck.</p>
+    <p><span>You can also edit or delete an existing truck.</span></p>
     {{#each food_trucks}}
     <div>
       <ul>
-
-        <li>Food Truck Name: {{truck_name}}</li>
-        <li>Location: {{city}}</li>
-        <li>Today's Special!: {{promo_message}}</li>
-        <li>Food Category: {{category}}</li>
+        <li><span>Food Truck Name: </span>{{truck_name}}</li>
+        <li><span>Location: </span>{{city}}</li>
+        <li><span>Today's Special!: </span>{{promo_message}}</li>
+        <li><span>Food Category: </span>{{category}}</li>
       </ul>
       <a href='/editTruck/{{id}}' target="_blank" class="button button-primary">Edit</a>
       <button type="button" class="button button-primary delete-truck" data-id="{{id}}">Delete</button>
