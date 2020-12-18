@@ -1,8 +1,7 @@
-
 {
     "development": {
       "username": "root",
-      "password": "ShenTP4$",
+      "password": "Tych2020",
       "database": "food_trucks_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
