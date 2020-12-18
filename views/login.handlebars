@@ -21,11 +21,11 @@
   <div class="row small-10 medium-8 columns box">
     <label>Select Operator
       <select id="username">
-        <option value="bobsBurgers">ntch2000</option>
-        <option value="bobsBurgers">Bob's Burgers</option>
-        <option value="melsDinner">Mel's Dinner</option>
-        <option value="hotDogWagon">Hot Dog Wagon</option>
-        <option value="tacoTruck">Taco Truck</option>
+        {{!-- dropdown options populated from the database --}}
+        {{#each food_trucks}}
+        <option value="{{operator_username}}">{{operator_username}}</option>
+        {{/each}}
+
       </select>
       <button type="button" class="expanded button button-primary" id="select-user">Chase</button>
     </label>
