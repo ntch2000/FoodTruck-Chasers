@@ -13,5 +13,9 @@ CREATE TABLE food_trucks(
     city VARCHAR(100) NOT NULL,
     category VARCHAR(100) NOT NULL,
     promo_message TEXT,
+    logo TEXT,
+    createdAt VARCHAR(100),
+    updatedAt VARCHAR(100),
     PRIMARY KEY(id)
 );
+
