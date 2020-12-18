@@ -16,6 +16,7 @@ router.get("/citySelector", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+  //res.render("city-selector");
 });
 
 // route to view all trucks in a city
