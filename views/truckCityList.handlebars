@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="row small-10 medium-10 columns im">
+    {{!-- <div class="row small-10 medium-10 columns im">
         {{#each food_trucks}}
         <div class="divide">
             <ul>
@@ -29,13 +29,13 @@
             </ul>
         </div>
         {{/each}}
-    </div>
-    {{!-- <div class="row small-10 medium-10 columns im">
+    </div> --}}
+    <div class="row small-10 medium-10 columns im">
         {{#each food_trucks}}
         <div class="row small-5 medium-5 columns float-right">
-            <img class="custLogo" src="..\assets\album-1.jpg" alt="">
+            <img class="custLogo" src="{{logo}}" alt="company logo">
         </div>
-        <div class="row small-6 medium-6 columns divide">
+        <div class="divide">
             <ul>
                 <li><span>Food Truck Name: </span>{{truck_name}}</li>
                 <li><span>Location: </span>{{city}}</li>
@@ -44,7 +44,7 @@
             </ul>
         </div>
         {{/each}}
-    </div> --}}
+    </div>
 
 
 

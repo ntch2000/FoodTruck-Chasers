@@ -37,6 +37,10 @@ module.exports = function (sequelize, DataTypes) {
         notNull: true,
       },
     },
+    logo: {
+      type: DataTypes.TEXT,
+      defaultValue: "https://res.cloudinary.com/dwc5cle4q/image/upload/v1608255607/Food%20Truck%20Chasers/YourLogoGoesHere_jcpna2.png"
+    },
     promo_message: DataTypes.TEXT,
   });
 
