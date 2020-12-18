@@ -19,13 +19,11 @@
     <div class="row small-10 medium-8 columns box" id="city">
       <label>Select City
         <select id="input">
+          {{!-- dropdown gets populated by cities in the database --}}
           {{#each food_trucks}}
           <option value="{{city}}">{{city}}</option>
           {{/each}}
-          {{!-- <option value="atlanta">Atlanta</option>
-          <option value="athens">Athens</option>
-          <option value="sandySprings">Sandy Springs</option>
-          <option value="fivePoints">Five Points</option> --}}
+
         </select>
         <button type="button" class="expanded button button-primary" id="submit">Chase</button>
       </label>

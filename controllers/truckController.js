@@ -3,11 +3,10 @@ const router = express.Router();
 const db = require("../models");
 
 // route to city-select page
-
 router.get("/citySelector", (req, res) => {
   db.food_truck
     .findAll({
-      attributes: [sequelize.fn("DISTINCT", sequelize.col("city"))],
+      group: "city",
     })
     .then((cities) => {
       console.log(cities);
@@ -16,7 +15,21 @@ router.get("/citySelector", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-  //res.render("city-selector");
+});
+
+// operator selector page
+router.get("/login", (req, res) => {
+  db.food_truck
+    .findAll({
+      group: "operator_username",
+    })
+    .then((username) => {
+      console.log(username);
+      res.render("login", { food_trucks: username });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 // route to view all trucks in a city
