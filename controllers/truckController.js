@@ -84,6 +84,8 @@ router.put("/api/editTruck/:id", (req, res) => {
     });
 });
 
+
+
 //route to display edit page with data
 router.get("/editTruck/:id", (req, res) => {
   db.food_truck
