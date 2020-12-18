@@ -42,32 +42,13 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-// app.get("/operator/", (req, res) => {
-//   res.render("operator");
-// });
-
-//app.get("/editTruck/:id", (req, res) => {
-// console.log("YOOOOO", req.body)
-//res.render("editTruck")
-//});
-
-app.get("/login", (req, res) => {
-  res.render("login");
-});
-
-app.get("/citySelector", (req, res) => {
-  res.render("city-selector");
-});
-
-// VIEW ROUTES FOR TESTING ONLY -- MUST BE DELETED
-
-// app.get("/editTruck", (req, res) => {
-//   res.render("editTruck");
-// });
-
 app.get("/createTruck", (req, res) => {
   res.render("createTruck");
 });
+
+// app.get("/login", (req, res) => {
+//   res.render("login");
+// });
 
 // API Routes
 app.get("/api/config", (req, res) => {

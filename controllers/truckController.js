@@ -2,6 +2,36 @@ const express = require("express");
 const router = express.Router();
 const db = require("../models");
 
+// route to city-select page
+router.get("/citySelector", (req, res) => {
+  db.food_truck
+    .findAll({
+      group: "city",
+    })
+    .then((cities) => {
+      console.log(cities);
+      res.render("city-selector", { food_trucks: cities });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+// operator selector page
+router.get("/login", (req, res) => {
+  db.food_truck
+    .findAll({
+      group: "operator_username",
+    })
+    .then((username) => {
+      console.log(username);
+      res.render("login", { food_trucks: username });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 // route to view all trucks in a city
 router.get("/truckCityList/:city", (req, res) => {
   db.food_truck
@@ -53,6 +83,8 @@ router.put("/api/editTruck/:id", (req, res) => {
       console.log(err);
     });
 });
+
+
 
 //route to display edit page with data
 router.get("/editTruck/:id", (req, res) => {

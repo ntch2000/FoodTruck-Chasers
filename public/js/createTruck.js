@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //console.log("This is a test");
+  console.log("This is a test");
 
   // value is obtained from local storage and set as the username to be saved into the database
   const operator_username = localStorage.getItem("username");
