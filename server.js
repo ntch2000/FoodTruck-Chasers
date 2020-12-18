@@ -42,6 +42,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/createTruck", (req, res) => {
+  res.render("createTruck");
+});
+
 // app.get("/login", (req, res) => {
 //   res.render("login");
 // });
